@@ -1,14 +1,16 @@
 package diplom2.restClients;
 
 import io.qameta.allure.Step;
+import io.qameta.allure.Story;
 import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
 
+@Story("Добавление ингридиентов")
 public class IngredientRestClient extends BasicRestClient {
     public static final String INGREDIENTS_PATH = "/api/ingredients/";
 
-    @Step("Регистрация пользователя")
+    @Step("Получение всех ингридиентов")
     public static ValidatableResponse getAllIngredients() {
         return given()
                 .spec(getBaseSpec())

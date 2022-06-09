@@ -1,35 +1,43 @@
 package diplom2.DTO.requestDTO;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import diplom2.entity.Ingredient;
-import lombok.*;
-import lombok.extern.jackson.Jacksonized;
+import io.qameta.allure.Story;
+import lombok.Data;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 
-@Getter
-@Setter
-public class CreateOrderDTO implements Serializable {
+@Data
+@Story("Создание заказа")
+public class CreateOrderDTO {
 
+    private List<IngredientDTO> ingredients;
+
+
+    public CreateOrderDTO(List<Ingredient> ingredientList) {
+        ingredients = new ArrayList<>();
+        for (Ingredient ingredient : ingredientList) {
+            IngredientDTO ingredientDTO = new IngredientDTO(ingredient);
+            ingredients.add(ingredientDTO);
+        }
+    }
+
+
+    public CreateOrderDTO(Ingredient... ingredientList) {
+        ingredients = new ArrayList<>();
+        for (Ingredient ingredient : ingredientList) {
+            IngredientDTO ingredientDTO = new IngredientDTO(ingredient);
+            ingredients.add(ingredientDTO);
+        }
+    }
+
+    @Data
     private class IngredientDTO {
         String _id;
 
         public IngredientDTO(Ingredient ingredient) {
-            this._id = ingredient.get_id();
+            this._id = ingredient.getId();
         }
-    }
-
-    private IngredientDTO[] ingredients;
-
-    public CreateOrderDTO(List ingredientList) {
-        List<IngredientDTO> list = new ArrayList<>();
-        for (Object ingredient : ingredientList) {
-            IngredientDTO ingredientDTO = new IngredientDTO((Ingredient) ingredient);
-            list.add(ingredientDTO);
-        }
-        this.ingredients = (IngredientDTO[]) list.toArray();
     }
 }
