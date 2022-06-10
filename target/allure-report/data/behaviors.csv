@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","","User Creation Tests","0","0","3","0","0"
+"","","Create Order Tests","0","0","5","0","0"
+"","","Tests for changing the data of an unauthorized user","0","0","2","0","0"
+"","","Tests for receiving user orders","0","0","2","0","0"
+"","","Tests for changing the data of an authorized user","0","0","2","0","0"
+"","","User authorization tests","0","0","2","0","0"

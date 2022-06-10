@@ -1,0 +1,123 @@
+{
+  "uid" : "c26b0d4ee3ce9b6d",
+  "name" : "Test for authorization of a non-existent user",
+  "fullName" : "diplom2.LoginUserTests.loginWithUnExistingUser",
+  "historyId" : "e7365016eae18c8e53dd704bcd3bc05e",
+  "time" : {
+    "start" : 1654856669143,
+    "stop" : 1654856669772,
+    "duration" : 629
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "User Registration",
+      "time" : {
+        "start" : 1654856669144,
+        "stop" : 1654856669371,
+        "duration" : 227
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "diplom2.entity.User@235d46b2"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "User Authorization",
+      "time" : {
+        "start" : 1654856669373,
+        "stop" : 1654856669588,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "diplom2.entity.User@235d46b2"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Deleting a user",
+      "time" : {
+        "start" : 1654856669589,
+        "stop" : 1654856669772,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTMxYmQ4OTk5ZmIyMDAxYjcwM2I0YyIsImlhdCI6MTY1NDg1NjY2NCwiZXhwIjoxNjU0ODU3ODY0fQ.y1qfhSPwtbsEz1ymvmLrrhrM2O7T2g2pcccFB0oICVM"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "diplom2"
+  }, {
+    "name" : "testClass",
+    "value" : "diplom2.LoginUserTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithUnExistingUser"
+  }, {
+    "name" : "suite",
+    "value" : "diplom2.LoginUserTests"
+  }, {
+    "name" : "host",
+    "value" : "Boka"
+  }, {
+    "name" : "thread",
+    "value" : "16488@Boka.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "User authorization tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c26b0d4ee3ce9b6d.json",
+  "parameterValues" : [ ]
+}

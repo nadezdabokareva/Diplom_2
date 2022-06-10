@@ -1,0 +1,237 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "diplom2.CreateOrderTests",
+    "children" : [ {
+      "name" : "Test for creating an order with an incorrect hash",
+      "uid" : "294c7ced18619995",
+      "parentUid" : "e6c14cc74c9a24bfc554a1f7a1413583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856657011,
+        "stop" : 1654856662052,
+        "duration" : 5041
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating an order with an unauthorized user",
+      "uid" : "2ef668998072ebe2",
+      "parentUid" : "e6c14cc74c9a24bfc554a1f7a1413583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856662164,
+        "stop" : 1654856663030,
+        "duration" : 866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating an order with ingredients",
+      "uid" : "2640a7982c2477a5",
+      "parentUid" : "e6c14cc74c9a24bfc554a1f7a1413583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856663034,
+        "stop" : 1654856664214,
+        "duration" : 1180
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating an order with no ingredients",
+      "uid" : "170a29b9b913814a",
+      "parentUid" : "e6c14cc74c9a24bfc554a1f7a1413583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856664218,
+        "stop" : 1654856664844,
+        "duration" : 626
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating an order with an authorized user\"",
+      "uid" : "65411d48d0224f7",
+      "parentUid" : "e6c14cc74c9a24bfc554a1f7a1413583",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856664846,
+        "stop" : 1654856666007,
+        "duration" : 1161
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e6c14cc74c9a24bfc554a1f7a1413583"
+  }, {
+    "name" : "diplom2.CreateUserTests",
+    "children" : [ {
+      "name" : "Test for creating a new user order",
+      "uid" : "69bad5ad22b528f6",
+      "parentUid" : "2e2891b6cd8967ef9c60e361ed02a406",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856666011,
+        "stop" : 1654856666406,
+        "duration" : 395
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating a user order with already existing data",
+      "uid" : "e0b91c1c601c1796",
+      "parentUid" : "2e2891b6cd8967ef9c60e361ed02a406",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856666412,
+        "stop" : 1654856666998,
+        "duration" : 586
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for creating a new user order without a required field",
+      "uid" : "500821609c619f5f",
+      "parentUid" : "2e2891b6cd8967ef9c60e361ed02a406",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856667000,
+        "stop" : 1654856667303,
+        "duration" : 303
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2e2891b6cd8967ef9c60e361ed02a406"
+  }, {
+    "name" : "diplom2.GetOrderUserTest",
+    "children" : [ {
+      "name" : "Test for receiving orders from an unauthorized user",
+      "uid" : "fc20a6a83a97504",
+      "parentUid" : "47ba4d61c4724e9b8e3ee70a05421377",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856667307,
+        "stop" : 1654856667883,
+        "duration" : 576
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for receiving orders from an authorized user",
+      "uid" : "f88107d20cb2040d",
+      "parentUid" : "47ba4d61c4724e9b8e3ee70a05421377",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856667886,
+        "stop" : 1654856668493,
+        "duration" : 607
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "47ba4d61c4724e9b8e3ee70a05421377"
+  }, {
+    "name" : "diplom2.LoginUserTests",
+    "children" : [ {
+      "name" : "Test for authorization of an existing user",
+      "uid" : "65b2a111b97b43ed",
+      "parentUid" : "ff0ff500b5b31d1dd6617a8f05caee42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856668497,
+        "stop" : 1654856669141,
+        "duration" : 644
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Test for authorization of a non-existent user",
+      "uid" : "c26b0d4ee3ce9b6d",
+      "parentUid" : "ff0ff500b5b31d1dd6617a8f05caee42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856669143,
+        "stop" : 1654856669772,
+        "duration" : 629
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ff0ff500b5b31d1dd6617a8f05caee42"
+  }, {
+    "name" : "diplom2.UpdateAuthUserTests",
+    "children" : [ {
+      "name" : "User Name Change test",
+      "uid" : "575ff3463a947184",
+      "parentUid" : "0fbc23e93abfdecfec7c7400b7702f81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856669776,
+        "stop" : 1654856670465,
+        "duration" : 689
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "User mail change test",
+      "uid" : "377685609e27bf8",
+      "parentUid" : "0fbc23e93abfdecfec7c7400b7702f81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856670467,
+        "stop" : 1654856671153,
+        "duration" : 686
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0fbc23e93abfdecfec7c7400b7702f81"
+  }, {
+    "name" : "diplom2.UpdateNonAuthUserTests",
+    "children" : [ {
+      "name" : "Test for changing the name of a non-existent user",
+      "uid" : "a2cb4cef4a919259",
+      "parentUid" : "68542c2bfd4f7722d25cae2a449b6a2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856671163,
+        "stop" : 1654856671740,
+        "duration" : 577
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Deleting user data after the test",
+      "uid" : "57e1bc465abec992",
+      "parentUid" : "68542c2bfd4f7722d25cae2a449b6a2e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1654856671743,
+        "stop" : 1654856672291,
+        "duration" : 548
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "68542c2bfd4f7722d25cae2a449b6a2e"
+  } ]
+}
