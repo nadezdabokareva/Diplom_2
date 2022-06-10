@@ -8,12 +8,12 @@ import io.qameta.allure.junit4.DisplayName;
 
 import java.util.List;
 
-@Story("Хранение ингридиентов")
+@Story("Storage of ingredients")
 public class IngredientRepository {
 
     public final static IngredientRepository ingredientRepository = new IngredientRepository();
 
-    @DisplayName("Получение ингридиентов")
+    @DisplayName("Getting ingredients")
     public List<Ingredient> getIngredients() {
         return IngredientRestClient.getAllIngredients().extract().as(ResponseGetIngredients.class).getData();
     }

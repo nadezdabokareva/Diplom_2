@@ -9,11 +9,11 @@ import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
 
-@Story("Создание заказа пользователем")
+@Story("Creating an order by a user")
 public class OrderRestClient extends BasicRestClient {
     public static final String ORDERS_PATH = "/api/orders";
 
-    @DisplayName("Создание нового заказа")
+    @DisplayName("Creating a new order")
     public static ValidatableResponse createOrder(CreateOrderDTO createOrderDTO, User user) {
         return given()
                 .spec(getBaseSpec())
@@ -25,7 +25,7 @@ public class OrderRestClient extends BasicRestClient {
                 .then();
     }
 
-    @DisplayName("Получение всех заказов")
+    @DisplayName("Receiving all orders")
     public static ValidatableResponse getAllOrder(User user) {
         return given()
                 .spec(getBaseSpec())

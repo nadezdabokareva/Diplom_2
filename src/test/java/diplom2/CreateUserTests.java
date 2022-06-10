@@ -14,25 +14,25 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-@Story("Тесты на создание пользователя")
+@Story("User Creation Tests")
 public class CreateUserTests {
 
     private static User user;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Creating a random user before the test")
     public void setUp() {
         user = UserService.generateRandomUser();
     }
 
     @After
-    @DisplayName("Удаление данных о пользователе после теста")
+    @DisplayName("Deleting user data after the test")
     public void tearDown() {
         UserRestClient.deleteUser(user.getToken());
     }
 
     @Test
-    @DisplayName("Тест на создание заказа нового пользователя")
+    @DisplayName("Test for creating a new user order")
     public void createUniqueUser() {
         ValidatableResponse validatableResponse = UserRestClient.createUser(user);
         ResponseCreateUserDTO responseCreateUserDTO = validatableResponse.extract().as(ResponseCreateUserDTO.class);
@@ -45,7 +45,7 @@ public class CreateUserTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа пользователя с уже существующими данными")
+    @DisplayName("Test for creating a user order with already existing data")
     public void createNonUniqueUser() {
         ValidatableResponse correctResponse = UserRestClient.createUser(user);
         user.setToken(correctResponse.extract().as(ResponseCreateUserDTO.class).getAccessToken());
@@ -59,7 +59,7 @@ public class CreateUserTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа нового пользователя без обязательного поля")
+    @DisplayName("Test for creating a new user order without a required field")
     public void createUserWithoutField() {
         String name = user.getName();
         user.setName(null);

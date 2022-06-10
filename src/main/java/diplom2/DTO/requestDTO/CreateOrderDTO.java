@@ -9,7 +9,7 @@ import java.util.List;
 
 
 @Data
-@Story("Создание заказа")
+@Story("Create Order DTO")
 public class CreateOrderDTO {
 
     private List<IngredientDTO> ingredients;

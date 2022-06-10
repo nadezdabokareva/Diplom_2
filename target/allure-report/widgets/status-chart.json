@@ -1,0 +1,161 @@
+[ {
+  "uid" : "69bad5ad22b528f6",
+  "name" : "Test for creating a new user order",
+  "time" : {
+    "start" : 1654856666011,
+    "stop" : 1654856666406,
+    "duration" : 395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2640a7982c2477a5",
+  "name" : "Test for creating an order with ingredients",
+  "time" : {
+    "start" : 1654856663034,
+    "stop" : 1654856664214,
+    "duration" : 1180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ef668998072ebe2",
+  "name" : "Test for creating an order with an unauthorized user",
+  "time" : {
+    "start" : 1654856662164,
+    "stop" : 1654856663030,
+    "duration" : 866
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57e1bc465abec992",
+  "name" : "Deleting user data after the test",
+  "time" : {
+    "start" : 1654856671743,
+    "stop" : 1654856672291,
+    "duration" : 548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc20a6a83a97504",
+  "name" : "Test for receiving orders from an unauthorized user",
+  "time" : {
+    "start" : 1654856667307,
+    "stop" : 1654856667883,
+    "duration" : 576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "377685609e27bf8",
+  "name" : "User mail change test",
+  "time" : {
+    "start" : 1654856670467,
+    "stop" : 1654856671153,
+    "duration" : 686
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "170a29b9b913814a",
+  "name" : "Test for creating an order with no ingredients",
+  "time" : {
+    "start" : 1654856664218,
+    "stop" : 1654856664844,
+    "duration" : 626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65b2a111b97b43ed",
+  "name" : "Test for authorization of an existing user",
+  "time" : {
+    "start" : 1654856668497,
+    "stop" : 1654856669141,
+    "duration" : 644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0b91c1c601c1796",
+  "name" : "Test for creating a user order with already existing data",
+  "time" : {
+    "start" : 1654856666412,
+    "stop" : 1654856666998,
+    "duration" : 586
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "575ff3463a947184",
+  "name" : "User Name Change test",
+  "time" : {
+    "start" : 1654856669776,
+    "stop" : 1654856670465,
+    "duration" : 689
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2cb4cef4a919259",
+  "name" : "Test for changing the name of a non-existent user",
+  "time" : {
+    "start" : 1654856671163,
+    "stop" : 1654856671740,
+    "duration" : 577
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "500821609c619f5f",
+  "name" : "Test for creating a new user order without a required field",
+  "time" : {
+    "start" : 1654856667000,
+    "stop" : 1654856667303,
+    "duration" : 303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c26b0d4ee3ce9b6d",
+  "name" : "Test for authorization of a non-existent user",
+  "time" : {
+    "start" : 1654856669143,
+    "stop" : 1654856669772,
+    "duration" : 629
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f88107d20cb2040d",
+  "name" : "Test for receiving orders from an authorized user",
+  "time" : {
+    "start" : 1654856667886,
+    "stop" : 1654856668493,
+    "duration" : 607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "294c7ced18619995",
+  "name" : "Test for creating an order with an incorrect hash",
+  "time" : {
+    "start" : 1654856657011,
+    "stop" : 1654856662052,
+    "duration" : 5041
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65411d48d0224f7",
+  "name" : "Test for creating an order with an authorized user\"",
+  "time" : {
+    "start" : 1654856664846,
+    "stop" : 1654856666007,
+    "duration" : 1161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

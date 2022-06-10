@@ -6,11 +6,11 @@ import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
 
-@Story("Добавление ингридиентов")
+@Story("Adding ingredients")
 public class IngredientRestClient extends BasicRestClient {
     public static final String INGREDIENTS_PATH = "/api/ingredients/";
 
-    @Step("Получение всех ингридиентов")
+    @Step("Getting all the ingredients")
     public static ValidatableResponse getAllIngredients() {
         return given()
                 .spec(getBaseSpec())

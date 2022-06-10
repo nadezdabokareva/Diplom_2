@@ -17,14 +17,14 @@ import static diplom2.service.UserService.generateRandomName;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-@Story("Тесты на изменение данных не авторизованного пользователя")
+@Story("Tests for changing the data of an unauthorized user")
 public class UpdateNonAuthUserTests {
 
     private static User user;
     private static String token;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Creating a random user before the test")
     public void setUp() {
         user = UserService.generateRandomUser();
         ResponseRegisterDTO responseRegisterDTO = UserRestClient.registerUser(user).extract().as(ResponseRegisterDTO.class);
@@ -39,7 +39,7 @@ public class UpdateNonAuthUserTests {
     }
 
     @Test
-    @DisplayName("Тест на изменение почты не существующего пользователя")
+    @DisplayName("Deleting user data after the test")
     public void changeEmail() {
         user.setEmail(generateRandomEmail());
 
@@ -52,7 +52,7 @@ public class UpdateNonAuthUserTests {
     }
 
     @Test
-    @DisplayName("Тест на изменение имени не существующего пользователя")
+    @DisplayName("Test for changing the name of a non-existent user")
     public void changeName() {
         user.setName(generateRandomName());
 

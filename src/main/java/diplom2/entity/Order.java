@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@Story("Описание заказа")
+@Story("Order Description")
 public class Order {
     private List<Ingredient> ingredients;
     @JsonProperty("_id")

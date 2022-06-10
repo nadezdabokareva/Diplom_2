@@ -5,13 +5,13 @@ import io.qameta.allure.junit4.DisplayName;
 import lombok.Data;
 
 @Data
-@Story("Ответ об изменении данных пользователя")
+@Story("Response about changing user data")
 public class ResponseUpdateUserDTO {
     private ResponseCreateUserDTO.ResponseUser user;
     private Boolean success;
 
     @Data
-    @DisplayName("Возврат измененных данных пользователя")
+    @DisplayName("Return of changed user data")
     public static class ResponseUser {
         private String email;
         private String name;

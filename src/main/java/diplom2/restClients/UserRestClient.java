@@ -8,14 +8,14 @@ import io.restassured.response.ValidatableResponse;
 
 import static io.restassured.RestAssured.given;
 
-@Story("Создание и авторизация пользователя")
+@Story("Creating and authorizing a user")
 public class UserRestClient extends BasicRestClient{
     public static final String REGISTER_PATH = "/api/auth/register";
     public static final String LOGIN_PATH = "/api/auth/login";
     public static final String USER_DATA_PATH = "/api/auth/user";
 
 
-    @Step("Создание пользователя")
+    @Step("Creating a user")
     public static ValidatableResponse createUser(User user) {
         return given()
                 .spec(getBaseSpec())
@@ -26,7 +26,7 @@ public class UserRestClient extends BasicRestClient{
                 .then();
     }
 
-    @Step("Регистрация пользователя")
+    @Step("User Authorization")
     public static ValidatableResponse authorizationUser(User user) {
         return given()
                 .spec(getBaseSpec())
@@ -38,7 +38,7 @@ public class UserRestClient extends BasicRestClient{
                 .then();
     }
 
-    @Step("Изменение данных пользователя")
+    @Step("Changing user data")
     public static ValidatableResponse setUserData(User user) {
         return given()
                 .spec(getBaseSpec())
@@ -48,7 +48,7 @@ public class UserRestClient extends BasicRestClient{
                 .then();
     }
 
-    @Step("Регистрация пользователя")
+    @Step("User Registration")
     public static ValidatableResponse registerUser(User user) {
         return given()
                 .spec(getBaseSpec())
@@ -59,7 +59,7 @@ public class UserRestClient extends BasicRestClient{
                 .then();
     }
 
-    @Step("Удаление пользователя")
+    @Step("Deleting a user")
     public static ValidatableResponse deleteUser(String token) {
         return given()
                 .spec(getBaseSpec())

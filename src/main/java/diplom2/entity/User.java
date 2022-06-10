@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Builder
-@Story("Описание пользователя")
+@Story("User Description")
 public class User implements Serializable {
     private String email;
     private String password;

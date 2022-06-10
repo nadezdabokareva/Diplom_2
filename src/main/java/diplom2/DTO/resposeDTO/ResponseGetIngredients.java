@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@Story("Возврат ингридиентов")
+@Story("Return of ingredients")
 public class ResponseGetIngredients {
     private String success;
     private List<Ingredient> data;

@@ -21,27 +21,27 @@ import java.util.List;
 import static diplom2.repository.IngredientRepository.ingredientRepository;
 import static org.junit.Assert.*;
 
-@Story("Тесты на создание заказа")
+@Story("Create Order Tests")
 public class CreateOrderTests {
 
     private static User user;
     private static ResponseRegisterDTO responseRegisterDTO;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Create test data")
     public void setUp() {
         user = UserService.generateRandomUser();
         responseRegisterDTO = UserRestClient.registerUser(user).extract().as(ResponseRegisterDTO.class);
     }
 
     @After
-    @DisplayName("Удаление данных о пользователе после теста")
+    @DisplayName("Delete test data")
     public void tearDown() {
         UserRestClient.deleteUser(user.getToken());
     }
 
     @Test
-    @DisplayName("Тест на создание заказа с авторизованным пользователем")
+    @DisplayName("Test for creating an order with an authorized user\"")
     public void createOrderWithAuthorization() {
         user.setToken(responseRegisterDTO.getAccessToken());
         List<Ingredient> listIngredients = ingredientRepository.getIngredients();
@@ -57,7 +57,7 @@ public class CreateOrderTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа с не авторизованным пользователем")
+    @DisplayName("Test for creating an order with an unauthorized user")
     public void createOrderWithoutAuthorization() {
         List<Ingredient> listIngredients = ingredientRepository.getIngredients();
         CreateOrderDTO orderDTO = new CreateOrderDTO(listIngredients.get(0), listIngredients.get(1));
@@ -75,7 +75,7 @@ public class CreateOrderTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа с ингридиентами")
+    @DisplayName("Test for creating an order with ingredients")
     public void createOrderWithIngredients() {
         user.setToken(responseRegisterDTO.getAccessToken());
         List<Ingredient> listIngredients = ingredientRepository.getIngredients();
@@ -92,7 +92,7 @@ public class CreateOrderTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа с без ингридиентов")
+    @DisplayName("Test for creating an order with no ingredients")
     public void createOrderWithoutIngredients() {
         user.setToken(responseRegisterDTO.getAccessToken());
         CreateOrderDTO orderDTO = new CreateOrderDTO();
@@ -106,7 +106,7 @@ public class CreateOrderTests {
     }
 
     @Test
-    @DisplayName("Тест на создание заказа с некорректным хешем")
+    @DisplayName("Test for creating an order with an incorrect hash")
     public void createOrderWithoutIncorrectIngredientsHash() {
         user.setToken(responseRegisterDTO.getAccessToken());
         List<Ingredient> listIngredients = ingredientRepository.getIngredients();

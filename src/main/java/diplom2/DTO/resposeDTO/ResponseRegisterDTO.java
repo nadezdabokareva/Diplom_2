@@ -5,7 +5,7 @@ import io.qameta.allure.junit4.DisplayName;
 import lombok.Data;
 
 @Data
-@Story("Ответ о регистрации пользователя")
+@Story("Response about user registration")
 public class ResponseRegisterDTO {
 
     private String accessToken;
@@ -14,7 +14,7 @@ public class ResponseRegisterDTO {
     private Boolean success;
 
     @Data
-    @DisplayName("Возврат данных пользователя")
+    @DisplayName("User data return")
     public static class ResponseUser {
         private String email;
         private String name;

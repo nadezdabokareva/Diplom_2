@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-@Story("Ответ на получение заказа")
+@Story("Response to order receipt")
 public class ResponseGetOrders {
     private Boolean success;
     private List<Order> orders;

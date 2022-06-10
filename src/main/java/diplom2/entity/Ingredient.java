@@ -1,9 +1,6 @@
 package diplom2.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.qameta.allure.Story;
 
 import lombok.Data;
@@ -11,7 +8,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-@Story("Ответ об изменении данных пользователя")
+@Story("Response about changing user data")
 public class Ingredient implements Serializable {
     @JsonProperty("_id")
     private String id;

@@ -5,7 +5,7 @@ import lombok.Data;
 
 
 @Data
-@Story("Возврат сообщения об ошибке")
+@Story("Return error message")
 public class ErrorResponseDTO {
     private Boolean success;
     private String message;

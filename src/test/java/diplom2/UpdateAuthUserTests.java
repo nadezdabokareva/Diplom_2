@@ -17,13 +17,13 @@ import static diplom2.service.UserService.generateRandomName;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-@Story("Тесты на изменение данных авторизованного пользователя")
+@Story("Tests for changing the data of an authorized user")
 public class UpdateAuthUserTests {
 
     private static User user;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Creating a random user before the test")
     public void setUp() {
         user = UserService.generateRandomUser();
         ResponseRegisterDTO responseRegisterDTO = UserRestClient.registerUser(user).extract().as(ResponseRegisterDTO.class);
@@ -31,13 +31,13 @@ public class UpdateAuthUserTests {
     }
 
     @After
-    @DisplayName("Удаление данных о пользователе после теста")
+    @DisplayName("Deleting user data after the test")
     public void tearDown() {
         UserRestClient.deleteUser(user.getToken());
     }
 
     @Test
-    @DisplayName("Тест на изменение почты пользователя")
+    @DisplayName("User mail change test")
     public void changeEmail() {
         user.setEmail(generateRandomEmail());
 
@@ -51,7 +51,7 @@ public class UpdateAuthUserTests {
     }
 
     @Test
-    @DisplayName("Тест на изменение имени пользователя")
+    @DisplayName("User Name Change test")
     public void changeName() {
         user.setName(generateRandomName());
 

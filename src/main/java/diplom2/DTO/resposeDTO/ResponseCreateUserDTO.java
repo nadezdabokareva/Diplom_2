@@ -4,7 +4,7 @@ import io.qameta.allure.Story;
 import lombok.Data;
 
 @Data
-@Story("Ответ о создании пользователя")
+@Story("Response about user creation")
 public class ResponseCreateUserDTO {
 
     private String accessToken;

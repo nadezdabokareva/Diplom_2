@@ -5,7 +5,7 @@ import io.qameta.allure.Story;
 import lombok.Data;
 
 @Data
-@Story("Ответ о создании заказа")
+@Story("Response about creating an order")
 public class ResponseOrderDTO {
     private Boolean success;
     private String name;

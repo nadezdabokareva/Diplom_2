@@ -15,13 +15,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-@Story("Тесты на авторизацию пользователя")
+@Story("User authorization tests")
 public class LoginUserTests {
 
     private static User user;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Creating a random user before the test")
     public void setUp() {
         user = UserService.generateRandomUser();
         ResponseRegisterDTO responseRegisterDTO = UserRestClient.registerUser(user).extract().as(ResponseRegisterDTO.class);
@@ -29,13 +29,13 @@ public class LoginUserTests {
     }
 
     @After
-    @DisplayName("Удаление данных о пользователе после теста")
+    @DisplayName("Deleting user data after the test")
     public void tearDown() {
         UserRestClient.deleteUser(user.getToken());
     }
 
     @Test
-    @DisplayName("Тест на авторизацию сущетсвующего пользователя")
+    @DisplayName("Test for authorization of an existing user")
     public void loginWithExistingUser() {
         ValidatableResponse validatableResponse = UserRestClient.authorizationUser(user);
         ResponseAuthorizationDTO responseAuthorizationDTO = validatableResponse.extract().as(ResponseAuthorizationDTO.class);
@@ -48,7 +48,7 @@ public class LoginUserTests {
     }
 
     @Test
-    @DisplayName("Тест на авторизацию не сущетсвующего пользователя")
+    @DisplayName("Test for authorization of a non-existent user")
     public void loginWithUnExistingUser() {
         String email = user.getEmail();
         user.setEmail(null);

@@ -16,27 +16,27 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-@Story("Тесты на получение заказов пользователя")
+@Story("Tests for receiving user orders")
 public class GetOrderUserTest {
 
     private static User user;
     private static ResponseRegisterDTO responseRegisterDTO;
 
     @Before
-    @DisplayName("Создание случайного пользователя перед тестом")
+    @DisplayName("Creating a random user before the test")
     public void setUp() {
         user = UserService.generateRandomUser();
         responseRegisterDTO = UserRestClient.registerUser(user).extract().as(ResponseRegisterDTO.class);
     }
 
     @After
-    @DisplayName("Удаление данных о пользователе после теста")
+    @DisplayName("Deleting user data after the test")
     public void tearDown() {
         UserRestClient.deleteUser(user.getToken());
     }
 
     @Test
-    @DisplayName("Тест на получение заказов авторизованного пользователя")
+    @DisplayName("Test for receiving orders from an authorized user")
     public void getOrderAuthUser() {
         user.setToken(responseRegisterDTO.getAccessToken());
 
@@ -49,7 +49,7 @@ public class GetOrderUserTest {
     }
 
     @Test
-    @DisplayName("Тест на получение заказов не авторизованного пользователя")
+    @DisplayName("Test for receiving orders from an unauthorized user")
     public void getOrderNonAuthUser() {
 
         ValidatableResponse validatableResponse = OrderRestClient.getAllOrder(user);

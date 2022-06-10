@@ -4,7 +4,7 @@ import io.qameta.allure.Story;
 import lombok.Data;
 
 @Data
-@Story("Ответ о регистрации пользователя")
+@Story("Response about user registration")
 public class ResponseAuthorizationDTO {
 
     private String accessToken;
