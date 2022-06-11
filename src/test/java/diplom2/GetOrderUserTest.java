@@ -1,11 +1,11 @@
 package diplom2;
 
-import diplom2.DTO.resposeDTO.ErrorResponseDTO;
-import diplom2.DTO.resposeDTO.ResponseGetOrders;
-import diplom2.DTO.resposeDTO.ResponseRegisterDTO;
+import diplom2.dto.respose.dto.ErrorResponseDTO;
+import diplom2.dto.respose.dto.ResponseGetOrders;
+import diplom2.dto.respose.dto.ResponseRegisterDTO;
 import diplom2.entity.User;
-import diplom2.restClients.OrderRestClient;
-import diplom2.restClients.UserRestClient;
+import diplom2.rest.clients.OrderRestClient;
+import diplom2.rest.clients.UserRestClient;
 import diplom2.service.UserService;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;

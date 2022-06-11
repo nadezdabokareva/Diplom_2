@@ -1,10 +1,10 @@
 package diplom2;
 
-import diplom2.DTO.resposeDTO.ErrorResponseDTO;
-import diplom2.DTO.resposeDTO.ResponseAuthorizationDTO;
-import diplom2.DTO.resposeDTO.ResponseRegisterDTO;
+import diplom2.dto.respose.dto.ErrorResponseDTO;
+import diplom2.dto.respose.dto.ResponseAuthorizationDTO;
+import diplom2.dto.respose.dto.ResponseRegisterDTO;
 import diplom2.entity.User;
-import diplom2.restClients.UserRestClient;
+import diplom2.rest.clients.UserRestClient;
 import diplom2.service.UserService;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
@@ -44,7 +44,6 @@ public class LoginUserTests {
         assertTrue(responseAuthorizationDTO.getSuccess());
         assertEquals(user.getEmail(), responseAuthorizationDTO.getUser().getEmail());
         assertEquals(user.getName(), responseAuthorizationDTO.getUser().getName());
-
     }
 
     @Test

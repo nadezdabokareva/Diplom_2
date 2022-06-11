@@ -2,7 +2,6 @@ package diplom2.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.qameta.allure.Story;
-
 import lombok.Data;
 
 import java.io.Serializable;
@@ -24,5 +23,4 @@ public class Ingredient implements Serializable {
     private String image_large;
     @JsonProperty("__v")
     private Long v;
-
 }
